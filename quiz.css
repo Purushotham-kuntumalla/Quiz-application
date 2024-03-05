@@ -1,0 +1,115 @@
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 20px;
+    text-align: center;
+    background-color: #87CEEB;
+    opacity: 0; /* Initially set opacity to 0 */
+    transition: opacity 1s ease;
+}
+body.loaded {
+    opacity: 1; /* Set opacity to 1 when loaded */
+}
+body.loaded #container {
+    transform: translateY(0);
+    opacity: 1;
+    
+}
+#container {
+    max-width: 600px;
+    background-color:#fff;
+   margin: auto;
+    padding: 5rem;
+    border-radius: 8px;
+    box-shadow: 1px 1px 1px 1px #bcb3b3a3;
+}
+
+.question {
+   
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: 1.2em;
+    margin-bottom: 1.4rem;
+}
+
+.options {
+    display: flex;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.option {
+    
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: all .6s;
+}
+
+.option:hover {
+    border-top: 2px solid #000;
+    background-color: #d8dd45fe;
+    color:#000;
+}
+
+#result {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin-top: 20px;
+    font-size: 1.2em;
+}
+
+.head{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+
+span{
+    color: #40ff00;
+    font-size: 1.5rem;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+p{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    background-color: #dddddd68;
+    padding: .7rem;
+    border-radius: 8px;
+    outline: none;
+}
+
+button{
+    width: 100px;
+    height: 30px;
+    
+    text-transform: capitalize;
+    background-color: #87CEEB;
+    color: #fff;
+    border: transparent;
+    border-radius: 6px;
+}
+
+button:hover{
+    background-color: #000;
+    color: #fff;
+    cursor: pointer;
+}
+
+@media (max-width: 375px) {
+    body {
+        width: fit-content;
+        height: 90vh;
+    }
+
+    #container {
+        width: fit-content;
+    }
+    
+
+    
+}
+
+
+  
